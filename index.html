@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Anne Horton - Assignment #6</title>
+    <link rel="stylesheet" type="text/css" href="assignment6.css"/>
+    <script src="assignment6.js"></script>
+</head>
+
+<body>
+<section id="title">
+    <h1>Assignment #6 - Anne Horton</h1>
+    <hr>
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please select an option</option>
+        <option>Show Section 1</option>
+        <option>Show Section 2</option>
+        <option>Show Section 3</option>
+    </select>
+</section>
+    <hr>
+
+<section id="section1" class="section1">
+    <h2>Add Customers</h2>
+    <br>
+    <label>Please Enter a Customer ID: </label>
+    <input type="text" id="custid">
+    <label class="instruction"> The customer ID should be 5 uppercase text characters.</label>
+    <br>
+    <label>Pleaes enter the Customer Name: </label>
+    <input type="text" id="custname">
+    <br>
+    <label>Pleaes enter the Customer City: </label>
+    <input type="text" id="custcity">
+    <br>
+    <button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+    <br>
+    <hr>
+    <br>
+    <label id="customerresult">The operation's result will display here.</label>
+</section>
+
+<section id="section2" class="section2">
+    <h2>Update Order Address</h2>
+    <br>
+    <label>Please enter an Order ID: </label>
+    <input type="text" id="orderid">
+    <br>
+    <label>Please enter the Shipping Address: </label>
+    <input type="text" id="shippingaddress">
+    <br>
+    <label>Please enter the Shipping Name: </label>
+    <input type="text" id="shippingname">
+    <br>
+    <label>Please enter the Shipping City: </label>
+    <input type="text" id="shippingcity">
+    <br>
+    <label>Please enter the Shipping Code: </label>
+    <input type="text" id="shippingcode">
+    <br>
+    <button onclick="ChangeAddress()" id="updaddress">Update Order</button>
+    <br>
+    <hr>
+    <br>
+    <label id="orderupdateresult">The operation's result will display here.</label>
+</section>
+
+<section id="section3" class="section3">
+     <h2>Delete Customers</h2>
+    <br>
+    <label>Please Enter a Customer ID: </label>
+    <input type="text" id="customerid">
+    <label class="idinstruction"> The customer ID should be 5 uppercase text characters.</label>
+    <br>
+    <button onclick="DeleteCustomer()" id="deletecust">Delete a Customer</button>
+    <br>
+    <hr>
+    <br>
+    <label id="deleteresult">The operation's result will display here.</label>
+</section>  
+
+<hr>
+<footer>
+<p>Anne Horton</p>
+<p>annemh@uab.edu or amhorton77@gmail.com</p>
+</footer>
+
+</body>
+</html>
